@@ -1,0 +1,11 @@
+{
+  "name": "awgreberconsulting",
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "resend": "^4.1.2"
+  },
+  "devDependencies": {
+    "@vercel/node": "^5.1.0"
+  }
+}
