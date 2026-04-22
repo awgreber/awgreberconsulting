@@ -26,7 +26,10 @@ export function HomePage() {
     <div className="bg-[#0F1117] text-[#F8FAFC]">
       <Navbar linkMode="home" />
 
-      {/* 1. Hero */}
+      {/* 1. Newsletter */}
+      <NewsletterSignup />
+
+      {/* 2. Hero */}
       <section className="relative overflow-hidden border-b border-[rgba(148,163,184,0.18)] py-24 sm:py-28">
         <div
           className="pointer-events-none absolute inset-0 opacity-20"
@@ -55,9 +58,6 @@ export function HomePage() {
           </motion.div>
         </div>
       </section>
-
-      {/* 2. Newsletter */}
-      <NewsletterSignup />
 
       {/* 3. Services brief */}
       <section className="bg-[#0F1117] px-6 py-20">
