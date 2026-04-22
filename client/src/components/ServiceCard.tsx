@@ -17,6 +17,9 @@ export function ServiceCard({ tier }: { tier: Tier }) {
       className="scroll-mt-24 relative flex h-full flex-col rounded-xl border-[0.5px] border-white/[0.05] bg-[#1A1D2E] p-6 transition-[transform,box-shadow] duration-200 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
     >
       <h3 className="mb-2 text-base font-medium text-[#F8FAFC] md:text-lg">{tier.name}</h3>
+      {tier.scopeLabel ? (
+        <p className="mb-2 text-xs font-medium tracking-wide text-[#64748B]">{tier.scopeLabel}</p>
+      ) : null}
       <p className="mb-3 text-sm text-[#94A3B8]">{tier.tagline}</p>
 
       <p className="mb-3 flex-1 text-sm leading-relaxed text-[#94A3B8]">{tier.description}</p>

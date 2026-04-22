@@ -3,6 +3,7 @@ export type TierId = 'discovery' | 'assessment' | 'teddy' | 'ollie' | 'baxter'
 export interface Tier {
   id: TierId
   name: string
+  scopeLabel?: string
   tagline: string
   description: string
   summary: string
@@ -23,7 +24,7 @@ export const discoveryCallPlus: DiscoveryCallPlus = {
   summary: '90-minute working session, one-page summary.',
   price: '$500',
   priceNote: 'Credited toward engagement if upgraded within 30 days.',
-  cta: { label: 'Book a Discovery Call → $500', href: '/book#discovery' },
+  cta: { label: 'Book a Discovery Call â $500', href: '/book#discovery' },
   implementations: 'None',
 }
 
@@ -31,6 +32,7 @@ export const engagementTiers: Tier[] = [
   {
     id: 'assessment',
     name: 'Assessment Only',
+    scopeLabel: "The 'Assessment' Tier",
     tagline: 'For operators who need direction, not implementation.',
     description:
       'Focused engagement identifying where your operation loses time, where structure is misaligned, and where AI can recover hours. Delivered as a written assessment with prioritized recommendations spanning workflow, team structure, and technology, including an organizational review showing how your team scales once the tools are in place.',
@@ -45,6 +47,7 @@ export const engagementTiers: Tier[] = [
   {
     id: 'teddy',
     name: 'Assessment + Teddy Build',
+    scopeLabel: "The 'Proof of Concept' Tier",
     tagline: 'For operators taking the first step into AI.',
     description:
       'Diagnostic assessment plus one AI implementation built to address the highest-priority opportunity surfaced. Includes an organizational review showing which tasks go away, which roles evolve, and how your team redirects recovered hours toward growth.',
@@ -58,6 +61,7 @@ export const engagementTiers: Tier[] = [
   {
     id: 'ollie',
     name: 'Assessment + Ollie Build',
+    scopeLabel: "The 'Connected Stack' Tier",
     tagline: 'For operators building a connected stack.',
     description:
       'Roadmap assessment plus two to three integrated AI implementations. Includes an organizational review sequenced alongside the stack build, so each AI deployment lands with the team structure that makes it work.',
@@ -72,6 +76,7 @@ export const engagementTiers: Tier[] = [
   {
     id: 'baxter',
     name: 'Assessment + Baxter Build',
+    scopeLabel: "The 'Total Ops Overhaul' Tier",
     tagline: 'For operators rebuilding operations around AI.',
     description:
       'Full roadmap assessment plus four or more integrated AI implementations across the operation. Includes a complete organizational review: which functions consolidate, which roles emerge, and how human capital redeploys against the operation AI cannot run.',

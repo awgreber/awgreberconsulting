@@ -108,7 +108,7 @@ export function ServicesPage() {
                 href="/book#discovery"
                 className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#3B82F6] px-8 text-base font-semibold text-white shadow-md transition-opacity hover:opacity-90"
               >
-                Book a Discovery Call → $500
+                Book a Discovery Call â $500
               </Link>
             </motion.div>
           </div>
@@ -118,7 +118,7 @@ export function ServicesPage() {
       <p className="mx-auto max-w-3xl px-6 py-4 text-center text-sm text-[#94A3B8]">
         Not ready for a Discovery Call?{' '}
         <Link href="/book" className="font-medium text-[#3B82F6] hover:underline">
-          Book a free 15-minute fit call →
+          Book a free 15-minute fit call â
         </Link>
       </p>
 
@@ -147,7 +147,7 @@ export function ServicesPage() {
             href="/book"
             className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg border border-[#3B82F6] px-6 py-2.5 text-sm font-semibold text-[#3B82F6] transition-colors hover:bg-[#3B82F6]/10"
           >
-            Book a Discovery Call → $500
+            Book a Discovery Call â $500
           </Link>
         </div>
       </section>
