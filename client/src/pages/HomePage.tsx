@@ -18,9 +18,6 @@ const primaryBtnClass =
 const secondaryBtnClass =
   'inline-flex min-h-12 w-full items-center justify-center rounded-lg border border-[#3B82F6] px-8 text-base font-semibold text-[#3B82F6] transition-colors hover:bg-[#3B82F6]/10 sm:w-auto'
 
-const ghostWideBtnClass =
-  'inline-flex min-h-12 w-full items-center justify-center rounded-lg border border-[#3B82F6] px-8 text-base font-semibold text-[#3B82F6] transition-colors hover:bg-[#3B82F6]/10 md:w-auto'
-
 export function HomePage() {
   return (
     <div className="bg-[#0F1117] text-[#F8FAFC]">
@@ -42,43 +39,20 @@ export function HomePage() {
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <motion.div {...fadeUp}>
             <h1 className="text-4xl font-bold tracking-tight text-[#F8FAFC] md:text-5xl lg:text-6xl">
-              Recovered hours, redeployed
+              Recovered Hours, Redeployed
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-[#94A3B8] md:text-xl">
-              AI recovers hours. Organizational design decides where they go.
+            <h2 className="mt-4 text-2xl font-semibold text-[#F8FAFC] md:text-3xl">
+              AI implementation paired with organizational design
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
+              Every engagement pairs an AI build with an organizational review. I help operators identify
+              which tasks go away, which roles evolve, and how to redeploy recovered hours toward growth.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Link href="/book" className={primaryBtnClass}>
-                Book a Discovery Call · $500
-              </Link>
-              <Link href="/book" className={secondaryBtnClass}>
-                Book a fit call
-              </Link>
-            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* 3. Services brief */}
-      <section className="bg-[#0F1117] px-6 py-20">
-        <motion.div {...fadeUp} className="mx-auto max-w-3xl text-center">
-          <Kicker>The work</Kicker>
-          <h2 className="mt-2 text-2xl font-semibold text-[#F8FAFC] md:text-3xl">
-            AI implementation paired with organizational design
-          </h2>
-          <p className="mt-6 text-left text-base leading-relaxed text-[#94A3B8] sm:text-lg">
-            Every engagement pairs an AI build with an organizational review. I help operators identify
-            which tasks go away, which roles evolve, and how to redeploy recovered hours towards growth.
-          </p>
-          <div className="mt-10 flex justify-center">
-            <Link href="/services" className={ghostWideBtnClass}>
-              See full engagement tiers →
-            </Link>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* 4. Two-card calls */}
+      {/* 3. Two-card calls */}
       <section className="bg-[#1A1D2E] px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <motion.div {...fadeUp} className="text-center">
