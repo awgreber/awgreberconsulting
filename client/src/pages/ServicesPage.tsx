@@ -79,7 +79,7 @@ export function ServicesPage() {
       <section
         id="discovery"
         className="scroll-mt-24 border-t border-b border-[#3B82F6] bg-[#1A1D2E] py-12 sm:py-14"
-        aria-label="Discovery Call Plus"
+        aria-label="Discovery Call"
       >
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start">
@@ -87,8 +87,8 @@ export function ServicesPage() {
               <Kicker>Before you commit</Kicker>
               <p className="mt-2 max-w-xl text-base leading-relaxed text-[#94A3B8] sm:text-lg">
                 Before you commit six figures to an AI stack, spend ninety minutes and five hundred
-                dollars making sure you&apos;re building the right thing. The Discovery Call Plus is
-                a structured working session with a twenty-six-year operator. You leave with a
+                dollars making sure you&apos;re building the right thing. The Discovery Call is a
+                structured working session with a twenty-six-year operator. You leave with a
                 personalized AI roadmap: a one-page summary of where AI pays in your operation,
                 which workflows to prioritize, and which engagement tier fits. Credited in full
                 against any engagement started within thirty days.
@@ -141,7 +141,7 @@ export function ServicesPage() {
       <section className="border-t border-[rgba(148,163,184,0.15)] bg-[#1A1D2E]/60 py-12">
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-6 px-6 text-center sm:flex-row sm:text-left">
           <p className="text-base font-medium text-[#F8FAFC] sm:flex-1">
-            Not sure which tier fits? Start with a Discovery Call Plus.
+            Not sure which tier fits? Start with a Discovery Call.
           </p>
           <Link
             href="/book"

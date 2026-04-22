@@ -290,7 +290,7 @@ export function AboutPage() {
             Start where it makes sense
           </h2>
           <p className="mt-6 text-base leading-relaxed text-[#94A3B8] sm:text-lg">
-            Not every operator is ready for a full assessment. The Discovery Call Plus is a
+            Not every operator is ready for a full assessment. The Discovery Call is a
             structured ninety-minute working session for anyone who wants direction before they
             commit.
           </p>

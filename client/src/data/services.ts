@@ -19,7 +19,7 @@ export type DiscoveryCallPlus = Omit<Tier, 'description' | 'signals'>
 
 export const discoveryCallPlus: DiscoveryCallPlus = {
   id: 'discovery',
-  name: 'Discovery Call Plus',
+  name: 'Discovery Call',
   tagline: 'Before you commit.',
   summary: '90-minute working session, one-page summary.',
   price: '$500',

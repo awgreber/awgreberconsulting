@@ -68,7 +68,7 @@ export function HomePage() {
           </h2>
           <p className="mt-6 text-left text-base leading-relaxed text-[#94A3B8] sm:text-lg">
             Every engagement pairs an AI build with an organizational review. I help operators identify
-            which tasks go away, which roles evolve, and how to redeploy recovered hours toward growth.
+            which tasks go away, which roles evolve, and how to redeploy recovered hours towards growth.
           </p>
           <div className="mt-10 flex justify-center">
             <Link href="/services" className={ghostWideBtnClass}>
@@ -103,7 +103,7 @@ export function HomePage() {
                 what you&apos;re trying to change, and whether my practice is the right fit.
               </p>
               <Link href="/book" className={`${secondaryBtnClass} mt-8 w-full sm:w-full`}>
-                Book a fit call
+                Book a Fit Call · Free
               </Link>
             </motion.article>
 
@@ -114,10 +114,10 @@ export function HomePage() {
             >
               <p className="text-xs font-medium tracking-wide text-[#3B82F6]">$500</p>
               <h3 className="mt-3 text-2xl font-semibold text-[#F8FAFC] md:text-3xl">
-                Discovery Call Plus
+                Discovery Call
               </h3>
               <p className="mt-4 flex-1 text-left text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-                Ninety-minute working session. You leave with a personalized AI roadmap: a one-page
+                Ninety-minute working session. You&apos;ll receive a personalized AI roadmap. a one-page
                 summary of where AI pays in your operation, which workflows to prioritize, and which
                 engagement tier fits. Credited in full against any engagement started within thirty
                 days.
@@ -173,7 +173,7 @@ export function HomePage() {
               Book a Discovery Call · $500
             </Link>
             <Link href="/book" className={secondaryBtnClass}>
-              Book a fit call
+              Book a Fit Call · Free
             </Link>
           </motion.div>
         </div>

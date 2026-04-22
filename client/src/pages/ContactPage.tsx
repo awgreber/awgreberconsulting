@@ -71,7 +71,7 @@ export function ContactPage() {
             <div>
               <Kicker>What to expect</Kicker>
               <ol className="mt-4 list-none space-y-4 text-[#94A3B8]">
-                <li className="text-base">01. Fit call or Discovery Call Plus, your choice</li>
+                <li className="text-base">01. Fit call or Discovery Call, your choice</li>
                 <li className="text-base">02. Scoped proposal following the call</li>
                 <li className="text-base">03. Engagement timeline discussed together</li>
               </ol>

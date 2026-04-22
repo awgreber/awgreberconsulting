@@ -46,29 +46,9 @@ export function Footer() {
           <Kicker className="mb-0">Services</Kicker>
           <ul className="mt-4 space-y-2 text-sm text-[#94A3B8]">
             <li>
-              <a href="/services#discovery" className="hover:text-[#3B82F6]">
-                Discovery Call Plus
-              </a>
-            </li>
-            <li>
-              <a href="/services#assessment" className="hover:text-[#3B82F6]">
-                Assessment Only
-              </a>
-            </li>
-            <li>
-              <a href="/services#teddy" className="hover:text-[#3B82F6]">
-                Assessment + Teddy
-              </a>
-            </li>
-            <li>
-              <a href="/services#ollie" className="hover:text-[#3B82F6]">
-                Assessment + Ollie
-              </a>
-            </li>
-            <li>
-              <a href="/services#baxter" className="hover:text-[#3B82F6]">
-                Assessment + Baxter
-              </a>
+              <Link href="/services" className="hover:text-[#3B82F6]">
+                Engagement Tiers
+              </Link>
             </li>
             <li>
               <Link href="/meet-the-agents" className="hover:text-[#3B82F6]">

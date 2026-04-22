@@ -7,7 +7,7 @@ import { Navbar } from '../components/Navbar'
 // TODO: replace with Calendly, Cal.com, or Microsoft Bookings URL for 15-min fit call.
 const FIT_CALL_CALENDAR_URL = ''
 
-// TODO: replace with Calendly, Cal.com, or Microsoft Bookings URL for 90-min Discovery Call Plus.
+// TODO: replace with Calendly, Cal.com, or Microsoft Bookings URL for 90-min Discovery Call.
 const DISCOVERY_CALL_CALENDAR_URL = ''
 
 function calendarHref(url: string, fallback: string): string {
@@ -95,7 +95,7 @@ export function BookPage() {
               A structured fifteen-minute call with one purpose: deciding whether we should work
               together. No operational advice given here. We talk about what you&apos;re running,
               what you&apos;re trying to change, and whether my practice is the right fit. If it is,
-              we schedule a Discovery Call Plus. If it isn&apos;t, I&apos;ll point you toward
+              we schedule a Discovery Call. If it isn&apos;t, I&apos;ll point you toward
               someone who is.
             </p>
             <div className="mt-5 text-sm text-[#94A3B8]">
@@ -116,7 +116,7 @@ export function BookPage() {
 
           <div id="discovery" className={`${cardClass} scroll-mt-28 ring-1 ring-[rgba(59,130,246,0.25)]`}>
             <p className="text-xs font-medium uppercase tracking-wider text-[#3B82F6]">$500</p>
-            <h2 className="mt-2 text-xl font-semibold text-[#F8FAFC]">Discovery Call Plus</h2>
+            <h2 className="mt-2 text-xl font-semibold text-[#F8FAFC]">Discovery Call</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#94A3B8] sm:text-base">
               Ninety-minute working session with a twenty-six-year operator. You leave with a
               personalized AI roadmap: a one-page summary of where AI pays in your operation, which
