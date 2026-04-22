@@ -129,7 +129,7 @@ export function BookPage() {
               external={discoveryExternal}
               className="mt-8 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#3B82F6] px-6 text-sm font-semibold text-white transition-opacity hover:opacity-90"
             >
-              Book a Discovery Call → $500
+              Book a Discovery Call · $500
             </BookCta>
           </div>
         </div>

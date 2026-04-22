@@ -46,7 +46,7 @@ export function HomePage() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link href="/book" className={primaryBtnClass}>
-                Book a Discovery Call → $500
+                Book a Discovery Call · $500
               </Link>
               <Link href="/book" className={secondaryBtnClass}>
                 Book a fit call
@@ -123,7 +123,7 @@ export function HomePage() {
                 days.
               </p>
               <Link href="/book" className={`${primaryBtnClass} mt-8 w-full sm:w-full`}>
-                Book a Discovery Call → $500
+                Book a Discovery Call · $500
               </Link>
             </motion.article>
           </div>
@@ -170,7 +170,7 @@ export function HomePage() {
             className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
             <Link href="/book" className={primaryBtnClass}>
-              Book a Discovery Call → $500
+              Book a Discovery Call · $500
             </Link>
             <Link href="/book" className={secondaryBtnClass}>
               Book a fit call

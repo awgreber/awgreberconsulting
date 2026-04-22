@@ -24,7 +24,7 @@ export const discoveryCallPlus: DiscoveryCallPlus = {
   summary: '90-minute working session, one-page summary.',
   price: '$500',
   priceNote: 'Credited toward engagement if upgraded within 30 days.',
-  cta: { label: 'Book a Discovery Call â $500', href: '/book#discovery' },
+  cta: { label: 'Book a Discovery Call · $500', href: '/book#discovery' },
   implementations: 'None',
 }
 

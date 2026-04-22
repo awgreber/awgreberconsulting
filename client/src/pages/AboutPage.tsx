@@ -299,7 +299,7 @@ export function AboutPage() {
               href="/book"
               className="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-[#3B82F6] px-8 text-base font-semibold text-white shadow-md transition-opacity hover:opacity-90 sm:w-auto"
             >
-              Book a Discovery Call → $500
+              Book a Discovery Call · $500
             </Link>
             <Link
               href="/services"

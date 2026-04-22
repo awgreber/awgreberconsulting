@@ -303,7 +303,7 @@ export function BaxterPage() {
             href="/book"
             className="inline-flex min-h-12 flex-1 items-center justify-center rounded-lg bg-[#3B82F6] px-8 text-base font-semibold text-white transition-opacity hover:opacity-90"
           >
-            Book a Discovery Call → $500
+            Book a Discovery Call · $500
           </Link>
           <Link
             href="/services"
