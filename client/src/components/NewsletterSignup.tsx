@@ -1,6 +1,5 @@
 import { useState, type FormEvent } from 'react'
 import { motion } from 'framer-motion'
-import { Kicker } from './Kicker'
 
 const fadeUp = {
   initial: { opacity: 0, y: 10 },
@@ -43,24 +42,37 @@ export function NewsletterSignup() {
   }
 
   return (
-    <section className="bg-[#1A1D2E] py-20 px-4 sm:px-6">
-      <div className="mx-auto max-w-3xl text-center">
+    <section className="relative overflow-hidden border-b border-[rgba(148,163,184,0.18)] bg-[#0F1117] py-24 sm:py-28">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-20"
+        style={{
+          backgroundImage:
+            'radial-gradient(circle, rgba(59,130,246,0.3) 1px, transparent 1px)',
+          backgroundSize: '22px 22px',
+        }}
+      />
+      <div className="relative mx-auto max-w-3xl px-6 text-center">
         <motion.div {...fadeUp}>
-          <Kicker>The Operator&apos;s Edge</Kicker>
-          <h2 className="mt-2 text-2xl font-semibold text-[#F8FAFC] md:text-3xl">
-            Practical AI for small business operators
-          </h2>
-          <p className="mt-6 text-left text-base leading-relaxed text-[#94A3B8] sm:text-lg">
-            Weekly issue covering what&apos;s working, what&apos;s worth buying, what&apos;s hype.
-            Written by an operator, not a vendor. Every issue, five minutes, something you can use
-            Monday morning.
+          <h1 className="text-5xl font-bold tracking-tight text-[#F8FAFC] md:text-6xl lg:text-7xl">
+            The Operator&apos;s Edge
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-[#3B82F6] md:text-xl">
+            Practical AI for Small Business Operators
+          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-semibold leading-snug text-[#F8FAFC] sm:text-xl">
+            Stop guessing, start operating.
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl text-balance text-center text-base leading-relaxed text-[#94A3B8] sm:text-lg">
+            Every Monday, Wednesday, and Friday, I break down proven strategies, smart buys, and the
+            truth behind the latest trends.
           </p>
         </motion.div>
 
         {status === 'success' ? (
           <motion.p
             {...fadeUp}
-            className="mt-8 text-left text-base text-[#F8FAFC]"
+            transition={{ duration: 0.18, delay: 0.05 }}
+            className="mt-10 text-center text-base text-[#F8FAFC]"
           >
             Thanks, you&apos;re in. Check your inbox for the welcome note.
           </motion.p>
@@ -68,7 +80,7 @@ export function NewsletterSignup() {
           <motion.form
             {...fadeUp}
             transition={{ duration: 0.18, delay: 0.05 }}
-            className="mt-8"
+            className="mt-10"
             onSubmit={(e) => void handleSubmit(e)}
           >
             <div className="flex flex-col gap-3 md:flex-row md:items-stretch md:gap-3">
@@ -91,15 +103,22 @@ export function NewsletterSignup() {
               </button>
             </div>
             {status === 'error' ? (
-              <p className="mt-3 text-left text-sm text-red-400">
+              <p className="mt-3 text-center text-sm text-red-400">
                 Something went wrong. Try again or email andrew@awgreber.com directly.
               </p>
             ) : null}
           </motion.form>
         )}
 
-        <p className="mt-6 text-left text-sm text-[#94A3B8]">
-          Free. No spam. Unsubscribe anytime.
+        <p className="mt-6 text-center text-sm text-[#94A3B8]">
+          Free {'\u00B7'} No spam {'\u00B7'} Unsubscribe anytime
+        </p>
+        <p className="mt-2 text-center text-xs text-[#94A3B8]">
+          By subscribing, you agree to our{' '}
+          <a href="/privacy" className="font-medium text-[#F8FAFC] hover:underline">
+            Privacy Policy
+          </a>
+          .
         </p>
       </div>
     </section>
